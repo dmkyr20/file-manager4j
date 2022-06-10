@@ -4,7 +4,7 @@ import com.dmkyr20.filemanager.core.base.Operator;
 import com.dmkyr20.filemanager.core.base.Verifier;
 import com.dmkyr20.filemanager.core.excepptions.FileCantBeDeletedException;
 import com.dmkyr20.filemanager.core.excepptions.UnexpectedException;
-import com.dmkyr20.filemanager.utils.BIThrowableAction;
+import com.dmkyr20.filemanager.utils.BiThrowableAction;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -64,7 +64,7 @@ record OperatorBasic(Verifier verifier) implements Operator {
     }
 
     private boolean create(Path parent, String filename,
-                           BIThrowableAction<Path, String, Boolean, IOException> action) {
+                           BiThrowableAction<Path, String, Boolean, IOException> action) {
         var path = parent.resolve(filename);
         try {
             if(Files.exists(path)) {
