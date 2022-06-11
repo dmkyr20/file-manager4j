@@ -38,7 +38,7 @@ class ExtendedFileManagerBasic extends FileManagerBasic implements ExtendedFileM
     }
 
     @Override
-    public boolean past(String newFilename) {
+    public boolean paste(String newFilename) {
         switch (operation) {
             case COPY:
                 return copy(bufferedFile, current().resolve(newFilename));
@@ -50,8 +50,8 @@ class ExtendedFileManagerBasic extends FileManagerBasic implements ExtendedFileM
     }
 
     @Override
-    public boolean past() {
-        return past(bufferedFile.getFileName().toString());
+    public boolean paste() {
+        return paste(bufferedFile.getFileName().toString());
     }
 
     @Override

@@ -9,6 +9,6 @@ public interface ExtendedMemorisedOperator extends ExtendedOperator, MemorisedOp
 
     void copy(String filename);
     void cut(String filename);
-    boolean past(String newFilename);
-    boolean past();
+    boolean paste(String newFilename);
+    boolean paste();
 }
