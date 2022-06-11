@@ -1,6 +1,5 @@
 # file-manager4j
 Simple file manager on Java
-
 Just a wrapper for java io/nio. Designed as usual file manager of Windows, Linux, etc...
 
 ## How to run?
