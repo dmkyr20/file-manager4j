@@ -10,7 +10,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-record OperatorBasic(Verifier verifier) implements Operator {
+class OperatorBasic implements Operator {
+    protected final Verifier verifier;
 
     public static Operator getOperatorYes() {
         return new OperatorBasic(s -> true);
@@ -18,6 +19,10 @@ record OperatorBasic(Verifier verifier) implements Operator {
 
     public static Operator getOperatorNot() {
         return new OperatorBasic(s -> false);
+    }
+
+    public OperatorBasic(Verifier verifier) {
+        this.verifier = verifier;
     }
 
     @Override

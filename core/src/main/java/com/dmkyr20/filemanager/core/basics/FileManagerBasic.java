@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-public class FileManagerBasic implements FileManager {
+class FileManagerBasic implements FileManager {
     private final Navigator navigator;
     private final Operator operator;
     private final Showman showman;
@@ -18,35 +18,6 @@ public class FileManagerBasic implements FileManager {
         this.navigator = new NavigatorBasic(initPath);
         this.operator = new OperatorBasic(verifier);
         this.showman = new ShowmanBasic();
-    }
-
-    @Override
-    public boolean delete(String filename) {
-        return operator.delete(current().resolve(filename));
-    }
-
-    @Override
-    public boolean createFile(String filename) {
-        return operator.createFile(current(), filename);
-    }
-
-    @Override
-    public boolean createDirectory(String filename) {
-        return operator.createDir(current(), filename);
-    }
-
-    @Override
-    public List<Path> showAll() {
-        return showman.showAll(current());
-    }
-
-    @Override
-    public List<String> showAllNames() {
-        return showman.showAll(current())
-                .stream()
-                .map(Path::getFileName)
-                .map(Path::toString)
-                .toList();
     }
 
     @Override

@@ -1,7 +1,7 @@
 package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.Navigator;
-import com.dmkyr20.filemanager.core.excepptions.UnreachableFile;
+import com.dmkyr20.filemanager.core.excepptions.UnreachableFileException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,7 +24,7 @@ class NavigatorBasic implements Navigator {
             }
             return false;
         } catch (IOException e) {
-            throw new UnreachableFile(currentFile, e);
+            throw new UnreachableFileException(currentFile, e);
         }
     }
 

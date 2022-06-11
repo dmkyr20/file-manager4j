@@ -1,7 +1,7 @@
 package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.Navigator;
-import com.dmkyr20.filemanager.core.excepptions.UnreachableFile;
+import com.dmkyr20.filemanager.core.excepptions.UnreachableFileException;
 import com.dmkyr20.filemanager.utils.TestResourceLocator;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -42,7 +42,7 @@ class NavigatorBasicTest {
         Path initPath = TestResourceLocator.getResourceFile("root");
         Navigator navigator = new NavigatorBasic(initPath);
 
-        assertThrows(UnreachableFile.class, () -> navigator.go("absence"));
+        assertThrows(UnreachableFileException.class, () -> navigator.go("absence"));
     }
 
     @Test
