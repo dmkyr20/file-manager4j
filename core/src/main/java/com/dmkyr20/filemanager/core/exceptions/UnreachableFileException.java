@@ -1,4 +1,4 @@
-package com.dmkyr20.filemanager.core.excepptions;
+package com.dmkyr20.filemanager.core.exceptions;
 
 import java.nio.file.Path;
 

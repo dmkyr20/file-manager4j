@@ -2,8 +2,8 @@ package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.Operator;
 import com.dmkyr20.filemanager.core.base.Verifier;
-import com.dmkyr20.filemanager.core.excepptions.FileCantBeDeletedException;
-import com.dmkyr20.filemanager.core.excepptions.UnexpectedException;
+import com.dmkyr20.filemanager.core.exceptions.FileCantBeDeletedException;
+import com.dmkyr20.filemanager.core.exceptions.UnexpectedException;
 import com.dmkyr20.filemanager.utils.BiThrowableAction;
 
 import java.io.IOException;

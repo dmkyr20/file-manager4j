@@ -2,7 +2,7 @@ package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.ExtendedOperator;
 import com.dmkyr20.filemanager.core.base.Verifier;
-import com.dmkyr20.filemanager.core.excepptions.UnreachableFileException;
+import com.dmkyr20.filemanager.core.exceptions.UnreachableFileException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

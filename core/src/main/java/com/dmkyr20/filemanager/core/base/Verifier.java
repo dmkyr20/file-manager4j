@@ -1,6 +1,6 @@
 package com.dmkyr20.filemanager.core.base;
 
-import com.dmkyr20.filemanager.core.excepptions.UnexpectedException;
+import com.dmkyr20.filemanager.core.exceptions.UnexpectedException;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,7 +1,7 @@
 package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.Showman;
-import com.dmkyr20.filemanager.core.excepptions.UnexpectedException;
+import com.dmkyr20.filemanager.core.exceptions.UnexpectedException;
 
 import java.io.IOException;
 import java.nio.file.Files;

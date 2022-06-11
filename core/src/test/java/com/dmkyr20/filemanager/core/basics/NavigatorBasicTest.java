@@ -1,7 +1,7 @@
 package com.dmkyr20.filemanager.core.basics;
 
 import com.dmkyr20.filemanager.core.base.Navigator;
-import com.dmkyr20.filemanager.core.excepptions.UnreachableFileException;
+import com.dmkyr20.filemanager.core.exceptions.UnreachableFileException;
 import com.dmkyr20.filemanager.utils.TestResourceLocator;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;

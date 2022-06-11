@@ -1,4 +1,4 @@
-package com.dmkyr20.filemanager.core.excepptions;
+package com.dmkyr20.filemanager.core.exceptions;
 
 public abstract class FileManagerException extends RuntimeException {
     public FileManagerException() {

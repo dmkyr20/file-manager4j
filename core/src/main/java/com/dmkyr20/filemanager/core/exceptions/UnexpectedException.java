@@ -1,4 +1,4 @@
-package com.dmkyr20.filemanager.core.excepptions;
+package com.dmkyr20.filemanager.core.exceptions;
 
 public class UnexpectedException extends FileManagerException {
     public UnexpectedException(Throwable e) {
